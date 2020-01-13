@@ -30,7 +30,7 @@
         android:id="@+id/what"
         android:layout_width="100dp"
         android:layout_height="39dp"
-        android:layout_marginTop="152dp"
+        android:layout_marginTop="112dp"
         android:text="0"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -63,11 +63,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/two" />
+
             <ImageButton
                 android:id="@+id/three"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/three" />
+
             <ImageButton
                 android:id="@+id/four"
                 android:layout_width="wrap_content"
@@ -87,11 +89,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/five" />
+
             <ImageButton
                 android:id="@+id/six"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/six" />
+
             <ImageButton
                 android:id="@+id/seven"
                 android:layout_width="wrap_content"
@@ -110,6 +114,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/eight" />
+
             <ImageButton
                 android:id="@+id/nine"
                 android:layout_width="wrap_content"
@@ -166,6 +171,17 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="44dp"
         android:text="Player"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/playAgainButton"
+        android:layout_width="35dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="9dp"
+        android:text="pow"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
