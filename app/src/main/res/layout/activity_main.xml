@@ -7,56 +7,33 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/curpiel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="48dp"
-        android:text="Curpiel"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/player"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="176dp"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="84dp"
-        android:text="Player"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/curpiel"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
         android:id="@+id/curpielPoints"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="68dp"
+        android:layout_marginStart="76dp"
         android:layout_marginTop="32dp"
         android:text="0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/curpiel" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonCurpiel" />
 
     <TextView
         android:id="@+id/playerPoints"
         android:layout_width="25dp"
         android:layout_height="26dp"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="96dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="76dp"
         android:text="0"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/player" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonPlayer" />
 
     <TextView
         android:id="@+id/what"
         android:layout_width="100dp"
         android:layout_height="39dp"
-        android:layout_marginTop="154dp"
+        android:layout_marginTop="152dp"
         android:text="0"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -171,5 +148,25 @@
                 app:srcCompat="@drawable/king" />
         </TableRow>
     </TableLayout>
+
+    <Button
+        android:id="@+id/buttonCurpiel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="32dp"
+        android:text="Curpiel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonPlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="44dp"
+        android:text="Player"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
