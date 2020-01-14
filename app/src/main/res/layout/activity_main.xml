@@ -4,34 +4,42 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/curpielPoints"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="31dp"
+        android:layout_height="36dp"
         android:layout_marginStart="76dp"
         android:layout_marginTop="32dp"
         android:text="0"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonCurpiel" />
 
     <TextView
         android:id="@+id/playerPoints"
         android:layout_width="25dp"
-        android:layout_height="26dp"
+        android:layout_height="31dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="76dp"
         android:text="0"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonPlayer" />
 
     <TextView
         android:id="@+id/what"
-        android:layout_width="100dp"
-        android:layout_height="39dp"
+        android:layout_width="182dp"
+        android:layout_height="77dp"
         android:layout_marginTop="112dp"
         android:text="0"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -52,28 +60,34 @@
             android:layout_height="wrap_content"
             android:gravity="center">
 
-            <ImageButton
+            <Button
                 android:id="@+id/ace"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/ace" />
+                android:layout_width="69dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/ace"
+                android:visibility="visible"
+                app:srcCompat="@drawable/ace"
+                tools:visibility="visible" />
 
-            <ImageButton
+            <Button
                 android:id="@+id/two"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="104dp"
+                android:background="@drawable/two"
                 app:srcCompat="@drawable/two" />
 
-            <ImageButton
+            <Button
                 android:id="@+id/three"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="104dp"
+                android:background="@drawable/three"
                 app:srcCompat="@drawable/three" />
 
-            <ImageButton
+            <Button
                 android:id="@+id/four"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="104dp"
+                android:background="@drawable/four"
                 app:srcCompat="@drawable/four" />
 
 
@@ -84,22 +98,25 @@
             android:layout_height="match_parent"
             android:gravity="center">
 
-            <ImageButton
+            <Button
                 android:id="@+id/five"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="104dp"
+                android:background="@drawable/five"
                 app:srcCompat="@drawable/five" />
 
-            <ImageButton
+            <Button
                 android:id="@+id/six"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="104dp"
+                android:background="@drawable/six"
                 app:srcCompat="@drawable/six" />
 
-            <ImageButton
+            <Button
                 android:id="@+id/seven"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="104dp"
+                android:background="@drawable/seven"
                 app:srcCompat="@drawable/seven" />
 
         </TableRow>
@@ -109,22 +126,25 @@
             android:layout_height="match_parent"
             android:gravity="center">
 
-            <ImageButton
+            <Button
                 android:id="@+id/eight"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="102dp"
+                android:background="@drawable/eight"
                 app:srcCompat="@drawable/eight" />
 
-            <ImageButton
+            <Button
                 android:id="@+id/nine"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="102dp"
+                android:background="@drawable/nine"
                 app:srcCompat="@drawable/nine" />
 
-            <ImageButton
+            <Button
                 android:id="@+id/ten"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="102dp"
+                android:background="@drawable/ten"
                 android:clickable="true"
                 app:srcCompat="@drawable/ten" />
         </TableRow>
@@ -134,22 +154,25 @@
             android:layout_height="match_parent"
             android:gravity="center">
 
-            <ImageButton
+            <Button
                 android:id="@+id/jack"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="105dp"
+                android:background="@drawable/jack"
                 app:srcCompat="@drawable/jack" />
 
-            <ImageButton
+            <Button
                 android:id="@+id/queen"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="105dp"
+                android:background="@drawable/queen"
                 app:srcCompat="@drawable/queen" />
 
-            <ImageButton
+            <Button
                 android:id="@+id/king"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="105dp"
+                android:background="@drawable/king"
                 app:srcCompat="@drawable/king" />
         </TableRow>
     </TableLayout>
@@ -160,6 +183,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="44dp"
         android:layout_marginTop="32dp"
+        android:background="@drawable/roundedbutton"
         android:text="Curpiel"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -170,17 +194,18 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="44dp"
+        android:background="@drawable/roundedbutton"
         android:text="Player"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/playAgainButton"
-        android:layout_width="35dp"
-        android:layout_height="32dp"
+        android:layout_width="28dp"
+        android:layout_height="25dp"
         android:layout_marginTop="7dp"
         android:layout_marginEnd="9dp"
-        android:text="pow"
+        android:background="@drawable/refresh"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

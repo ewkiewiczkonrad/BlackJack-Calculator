@@ -12,19 +12,19 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageButton ace;
-    ImageButton two;
-    ImageButton three;
-    ImageButton four;
-    ImageButton five;
-    ImageButton six;
-    ImageButton seven;
-    ImageButton eight;
-    ImageButton nine;
-    ImageButton ten;
-    ImageButton jack;
-    ImageButton queen;
-    ImageButton king;
+    Button ace;
+    Button two;
+    Button three;
+    Button four;
+    Button five;
+    Button six;
+    Button seven;
+    Button eight;
+    Button nine;
+    Button ten;
+    Button jack;
+    Button queen;
+    Button king;
 
     Button buttonPlayer;
     Button buttonCurpiel;
@@ -45,27 +45,27 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        buttonPlayer=(Button) findViewById(R.id.buttonPlayer);
-        buttonCurpiel=(Button) findViewById(R.id.buttonCurpiel);
+        buttonPlayer=findViewById(R.id.buttonPlayer);
+        buttonCurpiel= findViewById(R.id.buttonCurpiel);
         playAgainButton=findViewById(R.id.playAgainButton);
 
-        ace=(ImageButton) findViewById(R.id.ace);
-        two=(ImageButton) findViewById(R.id.two);
-        three=(ImageButton)findViewById(R.id.three);
-        four=(ImageButton) findViewById(R.id.four);
-        five=(ImageButton)findViewById(R.id.five);
-        six=(ImageButton)findViewById(R.id.six);
-        seven=(ImageButton)findViewById(R.id.seven);
-        eight=(ImageButton)findViewById(R.id.eight);
-        nine=(ImageButton)findViewById(R.id.nine);
-        ten=(ImageButton)findViewById(R.id.ten);
-        jack=(ImageButton)findViewById(R.id.jack);
-        queen=(ImageButton)findViewById(R.id.queen);
-        king=(ImageButton)findViewById(R.id.king);
+        ace= findViewById(R.id.ace);
+        two= findViewById(R.id.two);
+        three=findViewById(R.id.three);
+        four= findViewById(R.id.four);
+        five=findViewById(R.id.five);
+        six=findViewById(R.id.six);
+        seven=findViewById(R.id.seven);
+        eight=findViewById(R.id.eight);
+        nine=findViewById(R.id.nine);
+        ten=findViewById(R.id.ten);
+        jack=findViewById(R.id.jack);
+        queen=findViewById(R.id.queen);
+        king=findViewById(R.id.king);
 
-        curpielPoints=(TextView)findViewById(R.id.curpielPoints);
-        playerPoints=(TextView)findViewById(R.id.playerPoints);
-        what=(TextView) findViewById(R.id.what);
+        curpielPoints=findViewById(R.id.curpielPoints);
+        playerPoints=findViewById(R.id.playerPoints);
+        what=findViewById(R.id.what);
 
         playAgainButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -330,7 +330,7 @@ public class MainActivity extends AppCompatActivity {
 
         switch (pointsCurpiel) {
             case 2:
-                if ((pointsPlayer == 0) || (pointsPlayer == 4) || (pointsPlayer == 5) || (pointsPlayer == 6)
+                if ((pointsPlayer == 2) || (pointsPlayer == 3) || (pointsPlayer == 0) || (pointsPlayer == 4) || (pointsPlayer == 5) || (pointsPlayer == 6)
                         || (pointsPlayer == 7) || (pointsPlayer == 8)
                         || (pointsPlayer == 9) || (pointsPlayer == 12)) {
                     what.setText("Dobierz karte");
@@ -341,7 +341,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 break;
             case 3:
-                if ((pointsPlayer == 0) || (pointsPlayer == 4) || (pointsPlayer == 5) || (pointsPlayer == 6)
+                if ((pointsPlayer == 2) || (pointsPlayer == 3) || (pointsPlayer == 0) || (pointsPlayer == 4) || (pointsPlayer == 5) || (pointsPlayer == 6)
                         || (pointsPlayer == 7) || (pointsPlayer == 8)
                         || (pointsPlayer == 12)) {
                     what.setText("Dobierz karte");
@@ -352,7 +352,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 break;
             case 4:
-                if ((pointsPlayer == 0) || (pointsPlayer == 4) || (pointsPlayer == 5) || (pointsPlayer == 6)
+                if ((pointsPlayer == 2) || (pointsPlayer == 3) || (pointsPlayer == 0) || (pointsPlayer == 4) || (pointsPlayer == 5) || (pointsPlayer == 6)
                         || (pointsPlayer == 7) || (pointsPlayer == 8)) {
                     what.setText("Dobierz karte");
                 } else if ((pointsPlayer == 10) || (pointsPlayer == 11) || (pointsPlayer == 9)) {
@@ -362,7 +362,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 break;
             case 5:
-                if ((pointsPlayer == 0) || (pointsPlayer == 4) || (pointsPlayer == 5) || (pointsPlayer == 6)
+                if ((pointsPlayer == 2) || (pointsPlayer == 3) || (pointsPlayer == 0) || (pointsPlayer == 4) || (pointsPlayer == 5) || (pointsPlayer == 6)
                         || (pointsPlayer == 7) || (pointsPlayer == 8)) {
                     what.setText("Dobierz karte");
                 } else if ((pointsPlayer == 10) || (pointsPlayer == 11) || (pointsPlayer == 9)) {
@@ -372,7 +372,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 break;
             case 6:
-                if ((pointsPlayer == 0) || (pointsPlayer == 4) || (pointsPlayer == 5) || (pointsPlayer == 6)
+                if ((pointsPlayer == 2) || (pointsPlayer == 3) || (pointsPlayer == 0) || (pointsPlayer == 4) || (pointsPlayer == 5) || (pointsPlayer == 6)
                         || (pointsPlayer == 7) || (pointsPlayer == 8)) {
                     what.setText("Dobierz karte");
                 } else if ((pointsPlayer == 10) || (pointsPlayer == 11) || (pointsPlayer == 9)) {
@@ -382,7 +382,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 break;
             case 7:
-                if ((pointsPlayer == 0) || (pointsPlayer == 4) || (pointsPlayer == 5) || (pointsPlayer == 6)
+                if ((pointsPlayer == 2) || (pointsPlayer == 3) || (pointsPlayer == 0) || (pointsPlayer == 4) || (pointsPlayer == 5) || (pointsPlayer == 6)
                         || (pointsPlayer == 7) || (pointsPlayer == 8)
                         || (pointsPlayer == 9) || (pointsPlayer == 12)
                         || (pointsPlayer == 13) || (pointsPlayer == 14)
@@ -395,7 +395,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 break;
             case 8:
-                if ((pointsPlayer == 0) || (pointsPlayer == 4) || (pointsPlayer == 5) || (pointsPlayer == 6)
+                if ((pointsPlayer == 2) || (pointsPlayer == 3) || (pointsPlayer == 0) || (pointsPlayer == 4) || (pointsPlayer == 5) || (pointsPlayer == 6)
                         || (pointsPlayer == 7) || (pointsPlayer == 8)
                         || (pointsPlayer == 9) || (pointsPlayer == 12)
                         || (pointsPlayer == 13) || (pointsPlayer == 14)
@@ -408,7 +408,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 break;
             case 9:
-                if ((pointsPlayer == 0) || (pointsPlayer == 4) || (pointsPlayer == 5) || (pointsPlayer == 6)
+                if ((pointsPlayer == 2) || (pointsPlayer == 3) || (pointsPlayer == 0) || (pointsPlayer == 4) || (pointsPlayer == 5) || (pointsPlayer == 6)
                         || (pointsPlayer == 7) || (pointsPlayer == 8)
                         || (pointsPlayer == 9) || (pointsPlayer == 12)
                         || (pointsPlayer == 13) || (pointsPlayer == 14)
@@ -435,7 +435,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 break;
             case 11:
-                if ((pointsPlayer == 0) || (pointsPlayer == 4) || (pointsPlayer == 5) || (pointsPlayer == 6)
+                if ((pointsPlayer == 2) || (pointsPlayer == 3) || (pointsPlayer == 0) || (pointsPlayer == 4) || (pointsPlayer == 5) || (pointsPlayer == 6)
                         || (pointsPlayer == 7) || (pointsPlayer == 8)
                         || (pointsPlayer == 9) || (pointsPlayer == 12)
                         || (pointsPlayer == 13) || (pointsPlayer == 14)
